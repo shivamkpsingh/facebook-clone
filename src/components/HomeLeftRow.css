@@ -1,0 +1,22 @@
+.homeLeftRow{
+    display: flex;
+    align-items: center;
+    /* background-color: lightpink; */
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 6px;
+}
+.homeLeftRow:hover{
+    background-color: #ecebeb;
+}
+.homeLeftRow>h3{
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.homeLeftRow>.MuiSvgIcon-root{
+    font-size: 30px;
+    color: #307de2;
+}

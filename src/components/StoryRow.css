@@ -1,0 +1,36 @@
+.storyRow{
+    width: 115px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.storyRow__backgroundImg{
+    width: 100%;
+    /* width: auto; */
+    z-index: -1;
+    border-radius: 15px;
+    height: 100%;
+    /* object-fit: contain; */
+}
+.storyRow__profile{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.storyRow__profileAvatar{
+    margin-top: 10px;
+}
+.storyRow__profile >p {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}

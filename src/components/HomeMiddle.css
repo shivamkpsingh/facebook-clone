@@ -1,0 +1,76 @@
+.homeMiddle {
+  flex: 0.40;
+  border-right: 1px solid lightgray;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 0px 70px;
+}
+.homeMiddle__content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+.homeMiddle__content > button {
+  border-radius: 8px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: lightgrey;
+}
+.homeMiddle__contentButton > button {
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+.homeMiddle__contentButton button p {
+  font-weight: 700;
+  color: grey;
+  text-transform: capitalize;
+}
+
+
+.homeMiddle__story{
+    margin-top: 15px;
+    display: flex;
+}
+
+.homeMiddle__postContainer{
+  width: 100%;
+  background: white;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 3px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.homeMiddle__postContainer__title{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  /* margin-top:8px;
+  margin-left: 14px;
+  height: 50px; */
+}
+.homeMiddle__postContainer__title>input{
+  border: none;
+  flex: 1;
+  background-color: #f0f2f5;
+  height: 35px;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.homeMiddle__postContainer__button{
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

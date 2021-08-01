@@ -1,0 +1,5 @@
+.homeLeft {
+  flex: 0.30;
+  border-right: 1px solid lightgray;
+  padding-top: 12px;
+}
