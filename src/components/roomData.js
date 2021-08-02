@@ -1,0 +1,31 @@
+const roomData=[
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+    {
+      id:"123",
+      url:"https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/118798741_1066973410366286_2052277769102364830_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=l9zySDztvIEAX9Hf59Z&_nc_ht=scontent.fagr1-1.fna&oh=86b2d6ab55622bea9782470c78f4f99d&oe=612E39E4"
+    },
+]
+export default roomData;
