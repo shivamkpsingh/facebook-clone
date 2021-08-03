@@ -1,0 +1,36 @@
+.birthday {
+  max-width:auto;
+  background-color: white;
+  height: 100px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.birthday > p {
+  margin-top: 8px;
+  font-weight: 400;
+}
+.birthday p .birthday__span {
+  font-weight: 500;
+}
+.birthday__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.birthday__head > button {
+  border-radius: 20px;
+}
+.birthday__head .birthday__icon {
+  display: flex;
+  align-items: center;
+}
+.birthday__icon .MuiSvgIcon-root {
+  color: blue;
+}
+.birthday__head .birthday__icon p {
+  margin-left: 10px;
+  font-weight: 500;
+}

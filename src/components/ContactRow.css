@@ -1,0 +1,17 @@
+.contactRow {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.contactRow:hover{
+    background-color: #ecebeb;
+}
+.contactRow>h3{
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}

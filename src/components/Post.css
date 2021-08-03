@@ -1,69 +1,65 @@
-.post{
-    /* max-width: 400px; */
-    /* max-width: auto; */
-    border: 1px solid lightgray;
-    margin-top: 20px;
-    background-color: white;
-   border-radius: 8px;
+.post {
+  border: 1px solid lightgray;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
 }
-.post > img{
-    width: 100%;
-    object-fit: contain;
-    /* border-bottom: 1px solid lightgray; */
-    margin-bottom: 10px;
+.post > img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
-.post__header{
-    display: flex;
-    justify-content:space-between;
-    padding: 10px;
-    align-items: center;
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 }
-.post__headerLeft{
-    display: flex;
-    align-items: center;
+.post__headerLeft {
+  display: flex;
+  align-items: center;
 }
-.post__headerLeft .post__headerLeftTitle{
-    margin-left: 10px;
+.post__headerLeft .post__headerLeftTitle {
+  margin-left: 10px;
 }
-.post__headerLeft .post__headerLeftTitle h2{
-    font-weight: 500;
-    font-size: 16px;
+.post__headerLeft .post__headerLeftTitle h2 {
+  font-weight: 500;
+  font-size: 16px;
 }
 
-.post__action{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 1px solid lightgray;
+.post__action {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
 }
-.post__action >button{
-    width: 100%;
+.post__action > button {
+  width: 100%;
 }
-.post__action button p{
-    margin-left: 8px;
-    text-transform: capitalize;
+.post__action button p {
+  margin-left: 8px;
+  text-transform: capitalize;
 }
 
-.post__commentBox{
-    display: flex;
-    align-items: center;
-    padding: 10px;
+.post__commentBox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
-.post__commentBoxInput{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #f0f2f5;
-    margin-left: 10px;
-    height: 40px;
-    padding: 8px;
+.post__commentBoxInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  margin-left: 10px;
+  height: 40px;
+  padding: 8px;
 }
-.post__commentBoxInput>input{
-    flex: 1;
-    border: none;
-    background: none;
-    outline: none;
-
+.post__commentBoxInput > input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
 }

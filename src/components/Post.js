@@ -9,19 +9,14 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import GifIcon from "@material-ui/icons/Gif";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
-const Post = ({url}) => {
-  //post header
-  //img
-  //like comment share
-  //comment section
-  //comment ox
+const Post = ({ url, name }) => {
   return (
     <div className="post">
       <div className="post__header">
         <div className="post__headerLeft">
-          <Avatar src="https://images.news18.com/ibnlive/uploads/2017/11/Shah-Rukh-Khan-at-the-Millennium-Dome-London.jpg" />
+          <Avatar src={url} />
           <div className="post__headerLeftTitle">
-            <h2>Shivam</h2>
+            <h2>{name}</h2>
             <span>3:45 pm</span>
           </div>
         </div>
@@ -29,10 +24,7 @@ const Post = ({url}) => {
           <MoreHorizIcon />
         </Button>
       </div>
-      <img
-        src={url}
-        alt=""
-      />
+      <img src={url} alt="" />
       <div className="post__action">
         <Button>
           <ThumbUpAltIcon />
@@ -48,7 +40,7 @@ const Post = ({url}) => {
         </Button>
       </div>
       <div className="post__commentBox">
-        <Avatar src="https://images.news18.com/ibnlive/uploads/2017/11/Shah-Rukh-Khan-at-the-Millennium-Dome-London.jpg" />
+        <Avatar src={url} />
         <div className="post__commentBoxInput">
           <input type="text" placeholder="Write a comment" />
           <InsertEmoticonIcon />

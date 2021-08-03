@@ -46,9 +46,9 @@ const HomeMiddle = () => {
         <Room />
       </div>
       <div className="homeMiddle__post">
-        <Post url="https://i.ndtvimg.com/i/2018-01/shah-rukh-khan-twitter_650x400_71516679978.jpg"/>
-        <Post url="https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/s960x960/216958639_1273869343010024_2627740433350928421_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nfXI3hdsxO0AX-yZkVW&_nc_ht=scontent.fagr1-1.fna&oh=8fd57a08eadb380484275228bd519195&oe=612D043A"/>
-        <Post url="https://scontent.fagr1-2.fna.fbcdn.net/v/t1.6435-9/46702075_622069098190055_6690333585624268800_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=8EVuQ2op-uAAX8Rfy0A&_nc_ht=scontent.fagr1-2.fna&oh=b8a48f0d63a7066e7e671b59bb4b1582&oe=612CE9DE"/>
+        <Post url="https://i.ndtvimg.com/i/2018-01/shah-rukh-khan-twitter_650x400_71516679978.jpg" name="Shaharukh khan"/>
+        <Post url="https://scontent.fagr1-1.fna.fbcdn.net/v/t1.6435-9/s960x960/216958639_1273869343010024_2627740433350928421_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nfXI3hdsxO0AX-yZkVW&_nc_ht=scontent.fagr1-1.fna&oh=8fd57a08eadb380484275228bd519195&oe=612D043A" name="shivam"/>
+        <Post url="https://scontent.fagr1-2.fna.fbcdn.net/v/t1.6435-9/46702075_622069098190055_6690333585624268800_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=8EVuQ2op-uAAX8Rfy0A&_nc_ht=scontent.fagr1-2.fna&oh=b8a48f0d63a7066e7e671b59bb4b1582&oe=612CE9DE" name="shivam singh"/>
       </div>
     </div>
   );

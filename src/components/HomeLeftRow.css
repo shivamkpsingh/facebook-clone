@@ -1,8 +1,7 @@
 .homeLeftRow{
     display: flex;
     align-items: center;
-    /* background-color: lightpink; */
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     padding: 10px;
     cursor: pointer;
     border-radius: 8px;
