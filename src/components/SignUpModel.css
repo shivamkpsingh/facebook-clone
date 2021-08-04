@@ -1,0 +1,55 @@
+.signUP__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.signUP__header .signUP__headerLeft > h1 {
+  font-weight: 700;
+}
+.signUP__header .signUP__headerLeft > p {
+  color: gray;
+}
+.signUP__input {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.signUP__input .signUP__InputName {
+  display: flex;
+  justify-content: space-between;
+}
+.signUP__input .signUP__InputName > input {
+  border: 1px solid lightgray;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  background-color: #f0f2f5;
+  font-size: 14px;
+}
+.signUP__input > input {
+  border: 1px solid lightgray;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  background-color: #f0f2f5;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.signUP__input > button {
+  margin: 24px auto;
+  /* width: fit-content; */
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: green;
+  padding: 12px 60px;
+  text-transform: capitalize;
+}

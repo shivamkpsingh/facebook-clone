@@ -51,7 +51,7 @@
   color: blue;
   text-decoration: none;
 }
-.login__container > button {
+.login__container  > button {
   margin: 24px auto;
   width: fit-content;
   color: white;
