@@ -7,8 +7,8 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { useState } from "react";
 import ClearIcon from "@material-ui/icons/Clear";
-
-const useStyles = makeStyles((theme) => ({
+import auth from "./firebase";
+const useStyles = makeStyles(() => ({
   modal: {
     display: "flex",
     alignItems: "center",
@@ -25,11 +25,54 @@ const Login = () => {
   const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [surname, setSurnamename] = useState("");
   const [open, setOpen] = useState(false);
-
   // const [user, setUser] = useState();
 
-  const logIn = () => {};
+  const SignUp = (e) => {
+    e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((authUser) => {
+        console.log(authUser);
+        authUser.user
+          .sendEmailVerification()
+          .then(() => {
+            alert("An verification email sent to your email");
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    setOpen(false);
+  };
+  const logIn = (event) => {
+    event.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((authUser) => {
+        const user = authUser.user.emailVerified;
+        // console.log(user.emailVerified);
+        const Newuser = authUser.user;
+        console.log(Newuser);
+
+        if (user) {
+          console.log("yes email verified");
+        } else {
+          alert("email not verified");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    setEmail("");
+    setPassword("");
+  };
 
   const handleOpen = () => {
     setOpen(true);
@@ -53,6 +96,7 @@ const Login = () => {
               value={password}
               type="password"
               placeholder="Password"
+              autoComplete="on"
               onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit" onClick={logIn}>
@@ -65,16 +109,10 @@ const Login = () => {
             create new account
           </button>
           <Modal
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
             className={classes.modal}
             open={open}
             onClose={handleClose}
-            closeAfterTransition
             BackdropComponent={Backdrop}
-            BackdropProps={{
-              timeout: 500,
-            }}
           >
             <Fade in={open}>
               <div className={classes.paper}>
@@ -88,15 +126,35 @@ const Login = () => {
                 <form action="">
                   <div className="signUP__input">
                     <div className="signUP__InputName">
-                      <input type="text" placeholder="First name" />
-                      <input type="text" placeholder="Surname" />
+                      <input
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        type="name"
+                        placeholder="First name"
+                      />
+                      <input
+                        value={surname}
+                        onChange={(e) => setSurnamename(e.target.value)}
+                        type="name"
+                        placeholder="Surname"
+                      />
                     </div>
                     <input
-                      type="text"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
                       placeholder="Mobile number or email address"
                     />
-                    <input type="text" placeholder="New password" />
-                    <button type="submit">Sign Up</button>
+                    <input
+                      value={password}
+                      autoComplete="on"
+                      onChange={(e) => setPassword(e.target.value)}
+                      type="password"
+                      placeholder="New password"
+                    />
+                    <button onClick={SignUp} type="submit">
+                      Sign Up
+                    </button>
                   </div>
                 </form>
               </div>
