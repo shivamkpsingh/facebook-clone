@@ -1,14 +1,17 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import { useState } from "react";
 import Login from "./components/Login";
+import { useState } from "react";
+import { useStateValue } from "./components/StateProvider";
+// import { useStateValue } from "./components/StateProvider";
+// import { useEffect } from "react";
 function App() {
-  const [user, setUser] = useState();
-  return (
+ const[{user},dispatch]=useStateValue()
+  return ( 
     <div className="app">
       {!user ? (
-        <Login />
+        <Login  />
       ) : (
         <div className="appbody">
           <Navbar />

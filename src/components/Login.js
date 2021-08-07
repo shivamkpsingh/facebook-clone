@@ -8,6 +8,7 @@ import Fade from "@material-ui/core/Fade";
 import { useState } from "react";
 import ClearIcon from "@material-ui/icons/Clear";
 import auth from "./firebase";
+import { useStateValue } from "./StateProvider";
 const useStyles = makeStyles(() => ({
   modal: {
     display: "flex",
@@ -28,14 +29,41 @@ const Login = () => {
   const [firstName, setFirstName] = useState("");
   const [surname, setSurnamename] = useState("");
   const [open, setOpen] = useState(false);
-  // const [user, setUser] = useState();
+  const [{ user }, dispatch] = useStateValue();
+  const logIn = (event) => {
+    event.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((authUser) => {
+        const emailVerified = authUser.user.emailVerified;
 
+        // console.log(emailVerified);
+        if (emailVerified) {
+          //  const NewUser= authUser.user;
+          // console.log("email varified user ", Newuser);
+          dispatch({
+            type: "ADD__USER",
+            user: authUser.user,
+          });
+        } else {
+          alert("please verified your email");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    setEmail("");
+    setPassword("");
+  };
   const SignUp = (e) => {
     e.preventDefault();
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((authUser) => {
-        console.log(authUser);
+        // console.log(authUser);
+        authUser.user.updateProfile({
+          displayName: ` ${firstName} ${surname}`,
+        });
         authUser.user
           .sendEmailVerification()
           .then(() => {
@@ -50,28 +78,6 @@ const Login = () => {
       });
 
     setOpen(false);
-  };
-  const logIn = (event) => {
-    event.preventDefault();
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .then((authUser) => {
-        const user = authUser.user.emailVerified;
-        // console.log(user.emailVerified);
-        const Newuser = authUser.user;
-        console.log(Newuser);
-
-        if (user) {
-          console.log("yes email verified");
-        } else {
-          alert("email not verified");
-        }
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
-    setEmail("");
-    setPassword("");
   };
 
   const handleOpen = () => {
