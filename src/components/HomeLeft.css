@@ -1,5 +1,10 @@
 .homeLeft {
   flex: 0.30;
-  border-right: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
   padding-top: 12px;
+  position: sticky;
+  top: 0;
+  /* left: 0; */
+  height: 100vh;
+  /* overflow-y: scroll; */
 }

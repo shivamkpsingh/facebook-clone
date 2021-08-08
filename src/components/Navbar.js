@@ -12,7 +12,9 @@ import AppsIcon from "@material-ui/icons/Apps";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import ArrowDropDownSharpIcon from "@material-ui/icons/ArrowDropDownSharp";
+import { useStateValue } from "./StateProvider";
 const Navbar = () => {
+  const[{user},dispatch]=useStateValue()
   return (
     <div className="navbar">
       <div className="navbar__left">
@@ -42,7 +44,7 @@ const Navbar = () => {
       <div className="navbar__right">
         <Button>
           <Avatar src="https://scontent.fdel25-1.fna.fbcdn.net/v/t1.6435-9/s960x960/216958639_1273869343010024_2627740433350928421_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nfXI3hdsxO0AX_Uwz9a&_nc_ht=scontent.fdel25-1.fna&oh=5181ed00c52665171c2b4ae0a6711593&oe=61290FBA" />
-          <h3>shivam</h3>
+          <h3 className="navbar__rightName">{user.displayName}</h3>
         </Button>
         <Button>
           <AppsIcon />

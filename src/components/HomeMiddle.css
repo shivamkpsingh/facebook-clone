@@ -1,6 +1,6 @@
 .homeMiddle {
   flex: 0.40;
-  border-right: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
   padding: 0px 70px;
 }
 .homeMiddle__content {

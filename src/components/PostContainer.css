@@ -44,3 +44,38 @@
   font-size: 30px;
   margin-right: 8px;
 }
+
+
+/* postContainer upload task css */
+.postBox> h2{
+  text-align: center;
+  color: #0da00d;
+  padding-bottom: 4px;
+  border-bottom: 1px solid lightgray;
+}
+.postBox__profile{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.postBox__profile .postBox__profileDetails{
+  margin-left: 15px;
+  /* padding: 10px; */
+}
+.postBox__profile .postBox__profileDetails>h2{
+  font-size: 16px;
+}
+.postBox__input{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  /* width: 100%; */
+  border: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+.postBox__input>input{
+}

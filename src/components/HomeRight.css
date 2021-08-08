@@ -1,27 +1,30 @@
-.homeRight{
-    flex: 0.30;
-    /* flex:1; */
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
+.homeRight {
+  flex: 0.3;
+  /* flex:1; */
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
-.homeRight__birthdayBox{
-    padding:10px ;
+.homeRight__birthdayBox {
+  padding: 10px;
 }
-.homeRight__contact{
-    margin-top: 20px;
+.homeRight__contact {
+  margin-top: 20px;
 }
-.homeRight__contactHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.homeRight__contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.homeRight__contactHeader >h2{
-    font-weight: 500;
-    color: grey;
+.homeRight__contactHeader > h2 {
+  font-weight: 500;
+  color: grey;
 }
-.homeRight__contactHeader .homeRight__contactHeaderRight{
-    display: flex;
-    align-items: center;
+.homeRight__contactHeader .homeRight__contactHeaderRight {
+  display: flex;
+  align-items: center;
 }

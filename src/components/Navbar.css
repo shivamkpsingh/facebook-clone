@@ -42,7 +42,8 @@
   justify-content: center;
 }
 .navbar__middle > button {
-  margin-right: 30px;
+  /* margin-right: 25px; */
+  margin-left: 25px;
   /* padding: 5px 15px; */
 }
 .navbar__middle .MuiSvgIcon-root {
@@ -59,5 +60,10 @@
 }
 .navbar__right > button {
   border-radius: 20px;
-  margin-right: 4px;
+  /* margin-right: 4px; */
+  font-size:10px;
+}
+.navbar__right .navbar__rightName{
+  text-transform: capitalize;
+  margin-left: 8px;
 }

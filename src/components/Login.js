@@ -29,7 +29,7 @@ const Login = () => {
   const [firstName, setFirstName] = useState("");
   const [surname, setSurnamename] = useState("");
   const [open, setOpen] = useState(false);
-  const [{ user }, dispatch] = useStateValue();
+  const [{user}, dispatch] = useStateValue();
   const logIn = (event) => {
     event.preventDefault();
     auth
