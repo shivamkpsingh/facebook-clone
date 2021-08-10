@@ -12,7 +12,6 @@ import { useStateValue } from "./components/StateProvider";
 function App() {
  const[{user},dispatch]=useStateValue()
  
- 
   return ( 
     <div className="app">
       {!user ? (

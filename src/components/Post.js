@@ -9,22 +9,24 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import GifIcon from "@material-ui/icons/Gif";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
-const Post = ({ url, name }) => {
+const Post = ({ imageUrl,name,timestamp}) => {
   return (
     <div className="post">
       <div className="post__header">
         <div className="post__headerLeft">
-          <Avatar src={url} />
+          <Avatar src={imageUrl} />
           <div className="post__headerLeftTitle">
             <h2>{name}</h2>
-            <span>3:45 pm</span>
+            <span>{new Date(
+              timestamp?.toDate()
+            ).toLocaleTimeString()}</span>
           </div>
         </div>
         <Button>
           <MoreHorizIcon />
         </Button>
       </div>
-      <img src={url} alt="" />
+      <img src={imageUrl} alt="" />
       <div className="post__action">
         <Button>
           <ThumbUpAltIcon />
@@ -40,7 +42,7 @@ const Post = ({ url, name }) => {
         </Button>
       </div>
       <div className="post__commentBox">
-        <Avatar src={url} />
+        <Avatar src={imageUrl} />
         <div className="post__commentBoxInput">
           <input type="text" placeholder="Write a comment" />
           <InsertEmoticonIcon />

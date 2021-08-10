@@ -7,7 +7,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { useState } from "react";
 import ClearIcon from "@material-ui/icons/Clear";
-import auth from "./firebase";
+import {auth} from "./firebase";
 import { useStateValue } from "./StateProvider";
 const useStyles = makeStyles(() => ({
   modal: {

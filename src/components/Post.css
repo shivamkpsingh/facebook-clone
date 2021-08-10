@@ -3,17 +3,21 @@
   margin-top: 20px;
   background-color: white;
   border-radius: 8px;
+  /* max-width: 400px; */
+  max-width: 100%;
 }
 .post > img {
   width: 100%;
   object-fit: contain;
   margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
 }
 .post__header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 .post__headerLeft {
   display: flex;
